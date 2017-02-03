@@ -7,7 +7,7 @@ System.register(["@angular/core"], function (exports_1, context_1) {
         return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
     var __moduleName = context_1 && context_1.id;
-    var core_1, AppComponent;
+    var core_1, Panel;
     return {
         setters: [
             function (core_1_1) {
@@ -15,16 +15,17 @@ System.register(["@angular/core"], function (exports_1, context_1) {
             }
         ],
         execute: function () {
-            AppComponent = class AppComponent {
+            Panel = class Panel {
             };
-            AppComponent = __decorate([
+            Panel = __decorate([
                 core_1.Component({
-                    selector: 'my-app',
-                    template: '<h1>My First Angular 2 App</h1>'
+                    selector: 'panel',
+                    templateUrl: 'app/container/panel.html',
+                    inputs: ['title']
                 })
-            ], AppComponent);
-            exports_1("AppComponent", AppComponent);
+            ], Panel);
+            exports_1("Panel", Panel);
         }
     };
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=panel.js.map
