@@ -1,0 +1,18 @@
+<h1>My First Angular 2 App</h1> 
+<ul>
+    <li>
+        <a [routerLink]="['/']">Home</a>
+    </li>
+    <li>
+        <a [routerLink]="['/login']">Login</a>
+    </li>
+    <li>
+        <a [routerLink]="['/dashboard']">Dashboard</a>
+    </li>
+    <!-- 
+        PASSANDO PARAMETROS
+        <a [routerLink]="['User', {id:1}]">Princess Crisis</a> -->
+</ul>
+<div>
+    <router-outlet></router-outlet>
+</div>
